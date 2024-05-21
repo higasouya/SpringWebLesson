@@ -10,13 +10,7 @@ public class LessonApplication {
 
 	public static void main(String[] args) {
 
-		var context = SpringApplication.run(LessonApplication.class, args);
-
-		var productService = context.getBean(PgProductService.class);
-		var test = new Product(3,"test",100);
-
-		var products = productService.insert(test);
-		System.out.println(products);
+		SpringApplication.run(LessonApplication.class, args);
 	}
 
 }
