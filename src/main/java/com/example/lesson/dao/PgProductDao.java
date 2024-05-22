@@ -34,7 +34,7 @@ public class PgProductDao implements ProductDao {
         param.addValue("id", product.id());
         param.addValue("name", product.name());
         param.addValue("price", product.price());
-        return jdbcTemplate.update("INSERT INTO products VALUES(:id, :name, :price)", param);
+        return jdbcTemplate.update("INSERT INTO products (name,price) VALUES(:name, :price)", param);
     }
 
     @Override

@@ -22,5 +22,7 @@
         <td th:text="${product.price}"></td>
     </tr>
 </table>
+<a th:href="'/product/update/' + ${product.id}"><button>修正</button></a>
+<a th:href="'/delete/' + ${product.id}"><button>削除</button></a>
 </body>
 </html>
