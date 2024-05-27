@@ -74,4 +74,9 @@ public class ProductController {
         return "redirect:/product-list";
     }
 
+    @GetMapping("/product-management")
+    public String management(){
+            return "product-management";
+    }
+
 }
